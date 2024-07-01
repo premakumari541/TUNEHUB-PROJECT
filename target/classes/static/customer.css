@@ -1,0 +1,72 @@
+/* customer.css */
+body {
+    background-color:#07292e; /* Dark grey background for contrast */
+    color: #ffcd31; /* Golden text for readability */
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #f2497e; /* Royal Rose color for headers */
+    text-align: center;
+    margin: 20px 0;
+}
+.box {
+	
+	max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color:#023d35; /*#0e1d1f#484c4d Slightly lighter grey for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     /* royal rose text color */
+    text-align:center;
+    
+	
+	
+}
+
+a {
+    display: inline-block;
+    background-color: #077a69; /* Greenish background for buttons and links */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #077a69; /* Orange background on hover */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffcd31; /* Golden background for buttons */
+    color: #383838; /* Dark text for contrast */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f2497e; /* Orange background on hover */
+}
+
+.buy-button {
+    background-color: #484c4d; /* Light grey background */
+    color: #ffcd31; /* Golden text color */
+    border: 1px solid #ff7e26; /* Orange border for emphasis */
+}
+.premium img{
+	padding-left:20%;
+	
+	width:70%;
+	height:400px;
+}

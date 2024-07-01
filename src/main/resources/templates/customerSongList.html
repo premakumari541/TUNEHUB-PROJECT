@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CustomerSonglist</title>
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+<link href="admin.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/tunehub">TuneHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/viewsongs">viewSongs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="view-Playlists">ViewList</a>
+        </li>
+      </ul>
+      <span class="navbar-text"><a href="/map-login"> logout</a>
+       
+      </span>
+      
+    </div>
+  </div>
+</nav>
+<h1>List of songs</h1>
+<table border="1">
+<thead>
+  <tr>
+  <td>Name</td>
+  <td>Artist</td>
+  <td>Genre</td>
+  <td>Link</td>
+  </tr>
+   </thead>
+        <tbody>
+           <tr th:each="songslist:${songslist}">
+              <td th:text="${songslist.name}"></td>
+              <td th:text="${songslist.artist}"></td>
+              <td th:text="${songslist.genre}"></td>
+              <td><audio controls>
+                     <source th:src="${songslist.link}" type="audio/mpeg"></audio>
+               </td>
+              
+           </tr>
+           
+        </tbody>
+</table>
+</body>
+</html>

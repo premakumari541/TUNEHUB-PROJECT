@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <title>Register - Tune Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link href="welcome.css" rel="stylesheet">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/tunehub">TuneHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/map-register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/map-login">Login</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        login
+      </span>
+      
+    </div>
+  </div>
+</nav>
+  <div class="container">       
+       <form action="/register" method="post" class="text-center" >
+       <h2>Register</h2>
+          <label>Username</label>
+          <input type="text" name="username" class="form-control" required/><br><br>
+
+          <label>Email Id</label>
+          <input type="email" name="email" class="form-control" required/><br><br>
+
+          <label>Password</label>
+          <input type="password" name="password" class="form-control" required/><br><br>
+
+          <label>Gender :</label>
+          <div> 
+          <input type="radio" name="gender" value="male"/>male
+          <input type="radio"name="gender" value="female"/>female
+          <input type="radio" name="gender" value="other"/>Others
+          </div>
+       <br><br>
+
+          <label>Role :</label>
+          <div>  
+          <input type="radio" name="role" value="admin" required/>Admin
+          <input type="radio" name="role" value="customer" required/>Customer
+          </div>
+     <br><br>
+
+          <label>Address :</label>
+          <textarea type="textarea" name="address" required></textarea>
+          <p class="forgetline">*Must Remember this  when you forget password</p>
+
+      <br><br>
+
+           <input type="submit" value="Register" class="btn"/>
+        </form>
+      </div>
+
+     </body>
+</html>

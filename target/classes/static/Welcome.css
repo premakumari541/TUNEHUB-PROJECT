@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+/* welcome.css */
+body {
+	background-image:url(https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558_1280.jpg);
+	background-repeate:no-repeate;
+	background-size:cover;
+	
+   /* background-color: ;  Dark grey background/*
+    color: #ffcd31; /* Golden text color for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    /*background-image:url(https://as1.ftcdn.net/v2/jpg/00/45/50/32/1000_F_45503259_RIPZcpU9G5pa8F1WiJKhfDBfcDDsKf1b.jpg);
+    background-repeate:reapete-x;
+    background-size:cover;*/
+    background-color:#07292e ; /*#0e1d1f#484c4d Slightly lighter grey for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(242, 73, 126); /* royal rose text color */
+    
+}
+
+a, input[type=submit] {
+    background-color: #077a69;/* #62856d;  Greenish background for buttons and links */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+a:hover, input[type=submit]:hover {
+    background-color: #f2497e; /* Royal rose background on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top:5px;
+}
+
+input[type=email], input[type=password], input[type=text], textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #62856d; /* Greenish border */
+}
+
+input[type=radio] {
+    margin: 0 5px;
+}
+.forget{
+	text-decoration:none;
+	color:white;
+	background-color:#07292e;
+}
+.forgetline{
+	color:#ffcd31;
+}
